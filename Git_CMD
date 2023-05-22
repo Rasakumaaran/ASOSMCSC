@@ -1,0 +1,29 @@
+git push origin master 
+
+git commit -m "initial code"
+
+
+git clone https://github.com/raasakumaaran/DroneProject.git
+gh auth login
+sudo apt install gnome-shell-extensions
+
+<-- roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557" -->
+(or) fcu_url:="udp://:14540@192.168.1.36:14557"
+
+
+roslaunch mavros px4.launch fcu_url:=serial:///dev/ttyUSB0:921600 gcs_url:=udp://@192.168.0.110:14550
+
+<--gcs baud changed to = 115200-->
+make px4_sitl gazebo
+
+
+
+Mavproxy
+ mavproxy.py --master=/dev/ttyACM0
+ launching:
+ roslaunch mavros px4.launch fcu_url:=/dev/ttyACM0:921600 gcs_url:=udp://@192.168.0.107:14550
+ 
+ 
+ rosservice call /mavros/set_message_interval <ID> <HZ>
+ ## stream ID:
+ Battery-147;	rc_channel-65;	

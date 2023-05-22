@@ -1,0 +1,465 @@
+pi@raspberrypi:~/catkin_ws/src/DroneCode$ python3 mavros_offboard_custom_yawrate_test.py 
+[ROSUNIT] Outputting test results to /home/pi/.ros/test_results/px4/rosunit-mavros_offboard_yawrate_test.xml
+[INFO] [1662122523.494864]: 1st encounter
+[INFO] [1662122523.498690]: waiting for ROS services
+[INFO] [1662122523.526867]: ROS services are up
+[INFO] [1662122523.586066]: landed state changed from MAV_LANDED_STATE_UNDEFINED to MAV_LANDED_STATE_ON_GROUND
+[INFO] [1662122523.601060]: Entering send_att: 
+[INFO] [1662122523.602028]: waiting for landed state | state: MAV_LANDED_STATE_ON_GROUND, index: -1
+[INFO] [1662122523.607501]: Just published Attitude msgs: 
+[INFO] [1662122523.609956]: landed state confirmed | seconds: 0.0 of 10
+[INFO] [1662122523.611835]: connected changed from False to True
+[INFO] [1662122523.616570]: ========================
+[INFO] [1662122523.620429]: mode changed from  to ALTCTL
+[INFO] [1662122523.623998]: ===== topic values =====
+[INFO] [1662122523.627028]: system_status changed from MAV_STATE_UNINIT to MAV_STATE_STANDBY
+[INFO] [1662122523.629678]: ========================
+[INFO] [1662122523.635762]: altitude:
+header: 
+  seq: 1425
+  stamp: 
+    secs: 1662122523
+    nsecs: 557488440
+  frame_id: "map"
+monotonic: 925.1659545898438
+amsl: 925.1659545898438
+local: -1.7866606712341309
+relative: -1.7866606712341309
+terrain: -1.8866606950759888
+bottom_clearance: 0.10000000149011612
+[INFO] [1662122523.639190]: ========================
+[INFO] [1662122523.642551]: extended_state:
+header: 
+  seq: 712
+  stamp: 
+    secs: 1662122523
+    nsecs: 585262347
+  frame_id: ''
+vtol_state: 0
+landed_state: 1
+[INFO] [1662122523.646010]: ========================
+[INFO] [1662122523.649128]: global_position:
+header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+status: 
+  status: 0
+  service: 0
+latitude: 0.0
+longitude: 0.0
+altitude: 0.0
+position_covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+position_covariance_type: 0
+[INFO] [1662122523.652110]: ========================
+[INFO] [1662122523.655499]: home_position:
+header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+geo: 
+  latitude: 0.0
+  longitude: 0.0
+  altitude: 0.0
+position: 
+  x: 0.0
+  y: 0.0
+  z: 0.0
+orientation: 
+  x: 0.0
+  y: 0.0
+  z: 0.0
+  w: 0.0
+approach: 
+  x: 0.0
+  y: 0.0
+  z: 0.0
+[INFO] [1662122523.660023]: ========================
+[INFO] [1662122523.664260]: local_position:
+header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+pose: 
+  position: 
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  orientation: 
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+[INFO] [1662122523.667702]: ========================
+[INFO] [1662122523.671527]: mission_wp:
+current_seq: 0
+waypoints: []
+[INFO] [1662122523.674705]: ========================
+[INFO] [1662122523.679189]: state:
+header: 
+  seq: 143
+  stamp: 
+    secs: 1662122522
+    nsecs: 704063162
+  frame_id: ''
+connected: True
+armed: False
+guided: False
+manual_input: True
+mode: "ALTCTL"
+system_status: 3
+[INFO] [1662122523.682765]: ========================
+[INFO] [1662122523.686264]: setting FCU mode: OFFBOARD
+[INFO] [1662122523.708269]: Just published Attitude msgs: 
+[INFO] [1662122523.808047]: Just published Attitude msgs: 
+[INFO] [1662122523.908203]: Just published Attitude msgs: 
+[INFO] [1662122524.008155]: Just published Attitude msgs: 
+[INFO] [1662122524.108157]: Just published Attitude msgs: 
+[INFO] [1662122524.208270]: Just published Attitude msgs: 
+[INFO] [1662122524.308140]: Just published Attitude msgs: 
+[INFO] [1662122524.408353]: Just published Attitude msgs: 
+[INFO] [1662122524.508272]: Just published Attitude msgs: 
+[INFO] [1662122524.608302]: Just published Attitude msgs: 
+[INFO] [1662122524.708283]: Just published Attitude msgs: 
+[INFO] [1662122524.710241]: mode changed from ALTCTL to OFFBOARD
+[INFO] [1662122524.808253]: Just published Attitude msgs: 
+[INFO] [1662122524.908304]: Just published Attitude msgs: 
+[INFO] [1662122525.007996]: Just published Attitude msgs: 
+[INFO] [1662122525.108220]: Just published Attitude msgs: 
+[INFO] [1662122525.208032]: Just published Attitude msgs: 
+[INFO] [1662122525.308084]: Just published Attitude msgs: 
+[INFO] [1662122525.408272]: Just published Attitude msgs: 
+[INFO] [1662122525.508227]: Just published Attitude msgs: 
+[INFO] [1662122525.608258]: Just published Attitude msgs: 
+[INFO] [1662122525.690646]: set mode success | seconds: 2.0 of 5
+[INFO] [1662122525.695424]: setting FCU arm: True
+[INFO] [1662122525.708020]: Just published Attitude msgs: 
+[INFO] [1662122525.785531]: landed state changed from MAV_LANDED_STATE_ON_GROUND to MAV_LANDED_STATE_IN_AIR
+[INFO] [1662122525.808095]: Just published Attitude msgs: 
+[INFO] [1662122525.908162]: Just published Attitude msgs: 
+[INFO] [1662122526.008174]: Just published Attitude msgs: 
+[INFO] [1662122526.108198]: Just published Attitude msgs: 
+[INFO] [1662122526.208482]: Just published Attitude msgs: 
+[INFO] [1662122526.308237]: Just published Attitude msgs: 
+[INFO] [1662122526.408169]: Just published Attitude msgs: 
+[INFO] [1662122526.508673]: Just published Attitude msgs: 
+[INFO] [1662122526.608144]: Just published Attitude msgs: 
+[INFO] [1662122526.704072]: armed state changed from False to True
+[INFO] [1662122526.708324]: Just published Attitude msgs: 
+[INFO] [1662122526.712420]: system_status changed from MAV_STATE_STANDBY to MAV_STATE_ACTIVE
+[INFO] [1662122526.808448]: Just published Attitude msgs: 
+[INFO] [1662122526.908261]: Just published Attitude msgs: 
+[INFO] [1662122527.008559]: Just published Attitude msgs: 
+[INFO] [1662122527.108203]: Just published Attitude msgs: 
+[INFO] [1662122527.208314]: Just published Attitude msgs: 
+[INFO] [1662122527.308185]: Just published Attitude msgs: 
+[INFO] [1662122527.408435]: Just published Attitude msgs: 
+[INFO] [1662122527.508253]: Just published Attitude msgs: 
+[INFO] [1662122527.608257]: Just published Attitude msgs: 
+[INFO] [1662122527.701349]: set arm success | seconds: 2.0 of 5
+[INFO] [1662122527.706384]: run mission
+[INFO] [1662122527.708190]: Just published Attitude msgs: 
+[INFO] [1662122527.712119]: attempting to cross boundary | z: 10 , stay within x: 10  y: 10 
+   and achieve 0.1 yawrate
+[INFO] [1662122527.808923]: Just published Attitude msgs: 
+[INFO] [1662122527.909614]: Just published Attitude msgs: 
+[INFO] [1662122528.008431]: Just published Attitude msgs: 
+[INFO] [1662122528.109071]: Just published Attitude msgs: 
+[INFO] [1662122528.208367]: Just published Attitude msgs: 
+[INFO] [1662122528.308466]: Just published Attitude msgs: 
+[INFO] [1662122528.408315]: Just published Attitude msgs: 
+[INFO] [1662122528.508532]: Just published Attitude msgs: 
+[INFO] [1662122528.608371]: Just published Attitude msgs: 
+[INFO] [1662122528.708259]: Just published Attitude msgs: 
+[INFO] [1662122528.808505]: Just published Attitude msgs: 
+[INFO] [1662122528.908531]: Just published Attitude msgs: 
+[INFO] [1662122529.008175]: Just published Attitude msgs: 
+[INFO] [1662122529.108324]: Just published Attitude msgs: 
+[INFO] [1662122529.208485]: Just published Attitude msgs: 
+[INFO] [1662122529.308153]: Just published Attitude msgs: 
+[INFO] [1662122529.408625]: Just published Attitude msgs: 
+[INFO] [1662122529.508458]: Just published Attitude msgs: 
+[INFO] [1662122529.608389]: Just published Attitude msgs: 
+[INFO] [1662122529.708364]: Just published Attitude msgs: 
+[INFO] [1662122529.808270]: Just published Attitude msgs: 
+[INFO] [1662122529.908441]: Just published Attitude msgs: 
+[INFO] [1662122530.008804]: Just published Attitude msgs: 
+[INFO] [1662122530.108156]: Just published Attitude msgs: 
+[INFO] [1662122530.208117]: Just published Attitude msgs: 
+[INFO] [1662122530.308410]: Just published Attitude msgs: 
+[INFO] [1662122530.408279]: Just published Attitude msgs: 
+[INFO] [1662122530.508312]: Just published Attitude msgs: 
+[INFO] [1662122530.608226]: Just published Attitude msgs: 
+[INFO] [1662122530.709373]: Just published Attitude msgs: 
+[INFO] [1662122530.808153]: Just published Attitude msgs: 
+[INFO] [1662122530.908344]: Just published Attitude msgs: 
+[INFO] [1662122531.008137]: Just published Attitude msgs: 
+[INFO] [1662122531.108160]: Just published Attitude msgs: 
+[INFO] [1662122531.208401]: Just published Attitude msgs: 
+[INFO] [1662122531.308265]: Just published Attitude msgs: 
+[INFO] [1662122531.408250]: Just published Attitude msgs: 
+[INFO] [1662122531.508557]: Just published Attitude msgs: 
+[INFO] [1662122531.608242]: Just published Attitude msgs: 
+[INFO] [1662122531.708539]: Just published Attitude msgs: 
+[INFO] [1662122531.808285]: Just published Attitude msgs: 
+[INFO] [1662122531.908290]: Just published Attitude msgs: 
+[INFO] [1662122532.008220]: Just published Attitude msgs: 
+[INFO] [1662122532.108973]: Just published Attitude msgs: 
+[INFO] [1662122532.208083]: Just published Attitude msgs: 
+[INFO] [1662122532.308396]: Just published Attitude msgs: 
+[INFO] [1662122532.408421]: Just published Attitude msgs: 
+[INFO] [1662122532.508206]: Just published Attitude msgs: 
+[INFO] [1662122532.608155]: Just published Attitude msgs: 
+[INFO] [1662122532.708146]: Just published Attitude msgs: 
+[INFO] [1662122532.808225]: Just published Attitude msgs: 
+[INFO] [1662122532.908266]: Just published Attitude msgs: 
+[INFO] [1662122533.008960]: Just published Attitude msgs: 
+[INFO] [1662122533.108245]: Just published Attitude msgs: 
+[INFO] [1662122533.208180]: Just published Attitude msgs: 
+[INFO] [1662122533.308217]: Just published Attitude msgs: 
+[INFO] [1662122533.408249]: Just published Attitude msgs: 
+[INFO] [1662122533.508235]: Just published Attitude msgs: 
+[INFO] [1662122533.608665]: Just published Attitude msgs: 
+[INFO] [1662122533.708295]: Just published Attitude msgs: 
+[INFO] [1662122533.808323]: Just published Attitude msgs: 
+[INFO] [1662122533.908313]: Just published Attitude msgs: 
+[INFO] [1662122534.008444]: Just published Attitude msgs: 
+[INFO] [1662122534.108279]: Just published Attitude msgs: 
+[INFO] [1662122534.208179]: Just published Attitude msgs: 
+[INFO] [1662122534.308386]: Just published Attitude msgs: 
+[INFO] [1662122534.408357]: Just published Attitude msgs: 
+[INFO] [1662122534.508124]: Just published Attitude msgs: 
+[INFO] [1662122534.608371]: Just published Attitude msgs: 
+[INFO] [1662122534.708243]: Just published Attitude msgs: 
+[INFO] [1662122534.808608]: Just published Attitude msgs: 
+[INFO] [1662122534.908477]: Just published Attitude msgs: 
+[INFO] [1662122535.008368]: Just published Attitude msgs: 
+[INFO] [1662122535.108435]: Just published Attitude msgs: 
+[INFO] [1662122535.208159]: Just published Attitude msgs: 
+[INFO] [1662122535.308301]: Just published Attitude msgs: 
+[INFO] [1662122535.408511]: Just published Attitude msgs: 
+[INFO] [1662122535.508559]: Just published Attitude msgs: 
+[INFO] [1662122535.608168]: Just published Attitude msgs: 
+[INFO] [1662122535.708390]: Just published Attitude msgs: 
+[INFO] [1662122535.808355]: Just published Attitude msgs: 
+[INFO] [1662122535.908377]: Just published Attitude msgs: 
+[INFO] [1662122536.008263]: Just published Attitude msgs: 
+[INFO] [1662122536.108250]: Just published Attitude msgs: 
+[INFO] [1662122536.208258]: Just published Attitude msgs: 
+[INFO] [1662122536.308451]: Just published Attitude msgs: 
+[INFO] [1662122536.408492]: Just published Attitude msgs: 
+[INFO] [1662122536.508166]: Just published Attitude msgs: 
+[INFO] [1662122536.608326]: Just published Attitude msgs: 
+[INFO] [1662122536.708338]: Just published Attitude msgs: 
+[INFO] [1662122536.808331]: Just published Attitude msgs: 
+[INFO] [1662122536.908263]: Just published Attitude msgs: 
+[INFO] [1662122537.008268]: Just published Attitude msgs: 
+[INFO] [1662122537.108195]: Just published Attitude msgs: 
+[INFO] [1662122537.208296]: Just published Attitude msgs: 
+[INFO] [1662122537.308252]: Just published Attitude msgs: 
+[INFO] [1662122537.408317]: Just published Attitude msgs: 
+[INFO] [1662122537.508707]: Just published Attitude msgs: 
+[INFO] [1662122537.608435]: Just published Attitude msgs: 
+[INFO] [1662122537.708215]: Just published Attitude msgs: 
+[INFO] [1662122537.808321]: Just published Attitude msgs: 
+[INFO] [1662122537.908281]: Just published Attitude msgs: 
+[INFO] [1662122538.008243]: Just published Attitude msgs: 
+[INFO] [1662122538.108243]: Just published Attitude msgs: 
+[INFO] [1662122538.208319]: Just published Attitude msgs: 
+[INFO] [1662122538.308339]: Just published Attitude msgs: 
+[INFO] [1662122538.408290]: Just published Attitude msgs: 
+[INFO] [1662122538.508338]: Just published Attitude msgs: 
+[INFO] [1662122538.608220]: Just published Attitude msgs: 
+[INFO] [1662122538.708280]: Just published Attitude msgs: 
+[INFO] [1662122538.808286]: Just published Attitude msgs: 
+[INFO] [1662122538.908436]: Just published Attitude msgs: 
+[INFO] [1662122539.008287]: Just published Attitude msgs: 
+[INFO] [1662122539.108255]: Just published Attitude msgs: 
+[INFO] [1662122539.208375]: Just published Attitude msgs: 
+[INFO] [1662122539.308303]: Just published Attitude msgs: 
+[INFO] [1662122539.408472]: Just published Attitude msgs: 
+[INFO] [1662122539.508333]: Just published Attitude msgs: 
+[INFO] [1662122539.608536]: Just published Attitude msgs: 
+[INFO] [1662122539.708399]: Just published Attitude msgs: 
+[INFO] [1662122539.808369]: Just published Attitude msgs: 
+[INFO] [1662122539.908213]: Just published Attitude msgs: 
+[INFO] [1662122540.008232]: Just published Attitude msgs: 
+[INFO] [1662122540.108258]: Just published Attitude msgs: 
+[INFO] [1662122540.208336]: Just published Attitude msgs: 
+[INFO] [1662122540.308287]: Just published Attitude msgs: 
+[INFO] [1662122540.408382]: Just published Attitude msgs: 
+[INFO] [1662122540.508163]: Just published Attitude msgs: 
+[INFO] [1662122540.608321]: Just published Attitude msgs: 
+[INFO] [1662122540.708667]: Just published Attitude msgs: 
+[INFO] [1662122540.808293]: Just published Attitude msgs: 
+[INFO] [1662122540.908608]: Just published Attitude msgs: 
+[INFO] [1662122541.008355]: Just published Attitude msgs: 
+[INFO] [1662122541.108455]: Just published Attitude msgs: 
+[INFO] [1662122541.208586]: Just published Attitude msgs: 
+[INFO] [1662122541.308559]: Just published Attitude msgs: 
+[INFO] [1662122541.408301]: Just published Attitude msgs: 
+[INFO] [1662122541.508498]: Just published Attitude msgs: 
+[INFO] [1662122541.608335]: Just published Attitude msgs: 
+[INFO] [1662122541.708398]: Just published Attitude msgs: 
+[INFO] [1662122541.808187]: Just published Attitude msgs: 
+[INFO] [1662122541.908350]: Just published Attitude msgs: 
+[INFO] [1662122542.008301]: Just published Attitude msgs: 
+[INFO] [1662122542.108367]: Just published Attitude msgs: 
+[INFO] [1662122542.208172]: Just published Attitude msgs: 
+[INFO] [1662122542.308206]: Just published Attitude msgs: 
+[INFO] [1662122542.408817]: Just published Attitude msgs: 
+[INFO] [1662122542.508242]: Just published Attitude msgs: 
+[INFO] [1662122542.608230]: Just published Attitude msgs: 
+[INFO] [1662122542.708328]: Just published Attitude msgs: 
+[INFO] [1662122542.808367]: Just published Attitude msgs: 
+[INFO] [1662122542.908235]: Just published Attitude msgs: 
+[INFO] [1662122543.008175]: Just published Attitude msgs: 
+[INFO] [1662122543.108164]: Just published Attitude msgs: 
+[INFO] [1662122543.208101]: Just published Attitude msgs: 
+[INFO] [1662122543.308373]: Just published Attitude msgs: 
+[INFO] [1662122543.408243]: Just published Attitude msgs: 
+[INFO] [1662122543.508326]: Just published Attitude msgs: 
+[INFO] [1662122543.608290]: Just published Attitude msgs: 
+[INFO] [1662122543.708394]: Just published Attitude msgs: 
+[INFO] [1662122543.808255]: Just published Attitude msgs: 
+[INFO] [1662122543.908429]: Just published Attitude msgs: 
+[INFO] [1662122544.008203]: Just published Attitude msgs: 
+[INFO] [1662122544.108361]: Just published Attitude msgs: 
+[INFO] [1662122544.208186]: Just published Attitude msgs: 
+[INFO] [1662122544.308242]: Just published Attitude msgs: 
+[INFO] [1662122544.408394]: Just published Attitude msgs: 
+^C[INFO] [1662122617.719834]: Entering TearDown: in Test_comm status is there
+[INFO] [1662122617.845816]: ========================
+[INFO] [1662122617.852519]: ===== topic values =====
+[INFO] [1662122617.858390]: ========================
+[INFO] [1662122617.861425]: altitude:
+header: 
+  seq: 1634
+  stamp: 
+    secs: 1662122544
+    nsecs: 457717624
+  frame_id: "map"
+monotonic: 924.7114868164062
+amsl: 924.7114868164062
+local: -1.630584716796875
+relative: -1.630584716796875
+terrain: nan
+bottom_clearance: nan
+[INFO] [1662122617.879305]: ========================
+[INFO] [1662122617.887586]: extended_state:
+header: 
+  seq: 816
+  stamp: 
+    secs: 1662122544
+    nsecs: 384352149
+  frame_id: ''
+vtol_state: 0
+landed_state: 2
+[INFO] [1662122617.896989]: ========================
+[INFO] [1662122617.902239]: global_position:
+header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+status: 
+  status: 0
+  service: 0
+latitude: 0.0
+longitude: 0.0
+altitude: 0.0
+position_covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+position_covariance_type: 0
+[INFO] [1662122617.904716]: ========================
+[INFO] [1662122617.913455]: home_position:
+header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+geo: 
+  latitude: 0.0
+  longitude: 0.0
+  altitude: 0.0
+position: 
+  x: 0.0
+  y: 0.0
+  z: 0.0
+orientation: 
+  x: 0.0
+  y: 0.0
+  z: 0.0
+  w: 0.0
+approach: 
+  x: 0.0
+  y: 0.0
+  z: 0.0
+[INFO] [1662122617.918935]: ========================
+[INFO] [1662122617.929342]: local_position:
+header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+pose: 
+  position: 
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  orientation: 
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0
+[INFO] [1662122617.940057]: ========================
+[INFO] [1662122617.947270]: mission_wp:
+current_seq: 0
+waypoints: []
+[INFO] [1662122617.971449]: ========================
+[INFO] [1662122617.984998]: state:
+header: 
+  seq: 164
+  stamp: 
+    secs: 1662122543
+    nsecs: 702266742
+  frame_id: ''
+connected: True
+armed: True
+guided: False
+manual_input: False
+mode: "OFFBOARD"
+system_status: 4
+[INFO] [1662122617.997183]: ========================
+[Testcase: test_attctl] ... FAILURE!
+FAILURE: False is not true : took too long to finish test | current position x: 0.00, y: 0.00, z: 0.00 
+                              | current att qx: 0.26, qy: 0.06, qz: -0.64 qw: 0.72, yr: -0.01| timeout(seconds): 90
+  File "/usr/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib/python3.8/unittest/case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "/usr/lib/python3.8/unittest/case.py", line 633, in _callTestMethod
+    method()
+  File "mavros_offboard_custom_yawrate_test.py", line 157, in test_attctl
+    self.assertTrue(crossed, (
+  File "/usr/lib/python3.8/unittest/case.py", line 765, in assertTrue
+    raise self.failureException(msg)
+--------------------------------------------------------------------------------
+-------------------------------------------------------------
+SUMMARY:
+ * RESULT: FAIL
+ * TESTS: 1
+ * ERRORS: 0 []
+ * FAILURES: 1 [test_attctl]
+
+pi@raspberrypi:~/catkin_ws/src/DroneCode$ 
+
+
